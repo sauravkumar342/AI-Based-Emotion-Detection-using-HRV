@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🧠 AI Health Dashboard</h1>
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="card">
+                <h2>❤️ Heart Rate</h2>
+                <p id="hr">--</p>
+            </div>
+
+            <div class="card">
+                <h2>😰 Stress</h2>
+                <p id="stress">--</p>
+            </div>
+
+            <div class="card">
+                <h2>⚠️ Risk</h2>
+                <p id="risk">--</p>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <h2>🤖 AI Prediction</h2>
+            <p id="prediction">--</p>
+            <button onclick="predict()">Run Prediction</button>
+        </div>
+
+        <div class="card">
+            <h2>📈 ECG Signal</h2>
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="card">
+            <h2>🔍 Explainable AI</h2>
+            <button onclick="runXAI()">Explain AI</button>
+            <br><br>
+            <img id="xai" width="600">
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
